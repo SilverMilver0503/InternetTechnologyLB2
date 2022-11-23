@@ -2,7 +2,7 @@
 
 <html>
 
-	<head>
+	<head lang="en">
 		
 		<link rel="stylesheet" href="style.css">
 
@@ -14,6 +14,35 @@
 
 		</title>
 
+		<style>
+
+			[id*=qqq] {
+				height: 120px;
+				width: 120px;
+				background-color: lightgray;
+				border-width: 5px;
+				border-radius: 20%;
+				left: 50px;
+				bottom: 10px;
+			}
+
+			#qqq1 {
+				position: static;
+			}
+
+			#qqq2 {
+				position: relative;
+			}
+
+			#qqq3 {
+				position: fixed;
+			}
+
+			h1 {
+				background-color: darkcyan;
+			}
+		</style>
+
 	</head>
 	
 		
@@ -21,12 +50,6 @@
 	<body style="background-color:lightcyan;">
 
 		<h1>Ось так можна змiнити стиль за допомогою тега</h1>
-
-		<style>
-			h1 {
-				background-color: darkcyan;
-			}
-		</style>
 
 		<div class="dir" id="dir1">
 
@@ -74,36 +97,7 @@
 
 		</div>
 
-		<style>
-
-            [id*=qqq] {
-                position: center;
-                height: 120px;
-                width: 120px;
-                background-color: lightgray;
-                border-width: 5px;
-                border-radius: 20%;
-                left: 50px;
-                bottom: 10px;
-            }
-
-			#qqq1{
-
-				position:static;
-
-			}
-
-            #qqq2 {
-                position: relative;
-            }
-
-			#qqq3{
-
-				position: fixed;
-
-			}
-
-		</style>
+		
 
 		<div class="BigMarge"></div>
 
@@ -116,5 +110,6 @@
 		</div>
 
 	</body>
+
 
 </html>
