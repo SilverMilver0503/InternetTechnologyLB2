@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
+
 	<head>
 		
 		<link rel="stylesheet" href="style.css">
@@ -17,7 +18,15 @@
 	
 		
 
-	<body>
+	<body style="background-color:lightcyan;">
+
+		<h1>Ось так можна змiнити стиль за допомогою тега</h1>
+
+		<style>
+			h1 {
+				background-color: darkcyan;
+			}
+		</style>
 
 		<div class="dir" id="dir1">
 
@@ -45,6 +54,66 @@
 
 		<div class="BigMarge"></div>
 
+		<div style="width:500px; height:400px;">
+
+			<div id="qqq1">
+				<p id="p1">
+					position: static
+				</p>
+			</div>
+			<div id="qqq2">
+				<p id="p2">
+					position: relative
+				</p>
+			</div>
+			<div id="qqq3">
+				<p id="p3">
+					position: sticky
+				</p>
+			</div>
+
+		</div>
+
+		<style>
+
+            [id*=qqq] {
+                position: center;
+                height: 120px;
+                width: 120px;
+                background-color: lightgray;
+                border-width: 5px;
+                border-radius: 20%;
+                left: 50px;
+                bottom: 50px;
+            }
+
+			#qqq1{
+
+				position:static;
+
+			}
+
+            #qqq2 {
+                position: relative;
+            }
+
+			#qqq3{
+
+				position: sticky;
+
+			}
+
+		</style>
+
+		<div class="BigMarge"></div>
+
+		<div style="width:500px;height:500px;">
+			<p style="float:left">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+			<div style="width:200px;height:200px;background-color:white;float:inline-start;">
+
+			</div>
+
+		</div>
 
 	</body>
 
